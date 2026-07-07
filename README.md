@@ -1,12 +1,3 @@
----
-title: Mastering pd.merge() in Pandas
-emoji: 🔗
-colorFrom: blue
-colorTo: purple
-sdk: static
-pinned: false
----
-
 # Mastering pd.merge() in Pandas
 
 A complete, hands-on guide to merging DataFrames in Pandas using the **Chinook database** — a realistic sample dataset modelling a digital music store with customers, invoices, tracks, artists, and employees across 11 related tables.
