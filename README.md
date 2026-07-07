@@ -84,5 +84,40 @@ jupyter notebook pd_merge_guide.ipynb
 The Chinook database is downloaded automatically in the first cell — no additional files needed.
 
 ---
+---
 
-## Notebook Structure
+## Key Takeaways
+
+```python
+# Basic merge syntax
+pd.merge(left, right, how='inner', on='column_name')
+
+# Differently named columns
+pd.merge(df1, df2, left_on='customer_id', right_on='CustomerId')
+
+# Custom suffixes
+pd.merge(df1, df2, on='TrackId', suffixes=('_sold', '_catalog'))
+
+# Validate relationship type
+pd.merge(df1, df2, on='CustomerId', validate='1:m')
+```
+
+---
+
+## Related Articles
+
+This notebook is a standalone guide. Other articles in the datatodeploy.com Python and data science series:
+
+- [Pandas DataFrame Visualization in One Line of Code](https://datatodeploy.com/exploring-pandas-dataframe-visualization-in-one-line-of-code/)
+- [Building Interactive Dashboards with Plotly Dash](https://datatodeploy.com/plotly-dash-interactive-dashboards-python/)
+- [Building a Sales Dashboard with Plotly Dash](https://datatodeploy.com/plotly-dash-sales-dashboard-tutorial/)
+
+---
+
+## License
+
+MIT
+
+---
+
+*Built by [Arash](https://datatodeploy.com) — data science tutorials, Python guides, and deployment walkthroughs.*
